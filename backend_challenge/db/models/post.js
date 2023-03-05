@@ -11,14 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Post.belongsTo(models.Coffee, {
-        foreignKey: "id"
+        foreignKey: "coffee",
       });
     }
   }
   Post.init({
     title: DataTypes.STRING,
     coffee: DataTypes.INTEGER,
-    text: DataTypes.STRING,
+    text: DataTypes.STRING(1000),
     rating: DataTypes.FLOAT
   }, {
     sequelize,

@@ -21,18 +21,20 @@ module.exports = {
         onDelete: 'CASCADE'
       },
       text: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(1000)
       },
       rating: {
         type: Sequelize.FLOAT
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
       }
     });
   },
