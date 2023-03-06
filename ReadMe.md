@@ -1,5 +1,7 @@
 # App Academy Mock Takehome Challenges
 
+* NOTE to a/A staff - I did not have time to 'complete' this challenge but wanted to submit what I was able to get done (the backend routes)
+
 # To start this locally
 - Clone this repo
 - ```cd``` into ```/backend_challenge``` and run ```npm i```
